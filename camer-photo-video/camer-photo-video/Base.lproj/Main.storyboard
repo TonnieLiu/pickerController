@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1912" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7P-Ku-QXD">
+                                <rect key="frame" x="115" y="126" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.43342021650000001" green="1" blue="0.35280151119999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="摄像"/>
+                                <connections>
+                                    <action selector="takeVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U8G-sg-Zu7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWh-hR-q1W">
+                                <rect key="frame" x="115" y="169" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.43342021650000001" green="1" blue="0.35280151119999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="播放"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rXJ-Yv-GNx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fbaec979a4cf1421bedfa65dd3a02a6d.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JQ8-H1-Pmy">
+                                <rect key="frame" x="40" y="234" width="250" height="250"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yD3-j2-2Gi">
+                                <rect key="frame" x="115" y="34" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.43342021650000001" green="1" blue="0.35280151119999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="选取照片"/>
+                                <connections>
+                                    <action selector="photoPick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ofb-uU-f7u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FcC-KR-DFP">
+                                <rect key="frame" x="115" y="79" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.43342021650000001" green="1" blue="0.35280151119999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="拍照"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OMO-xP-IhQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="JQ8-H1-Pmy" id="NHZ-VG-dfh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="-70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fbaec979a4cf1421bedfa65dd3a02a6d.jpg" width="1280" height="800"/>
+    </resources>
+</document>
